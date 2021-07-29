@@ -1,0 +1,63 @@
+
+/* ---- BOOKING ---- */
+.booking {
+    &--form {
+        width: 100%;
+        height: auto;
+
+        &__icon {
+            width: torem(66);
+            height: torem(66);
+            background: $light-grey;
+            border-radius: 50%;
+            @include justify-align-center; // ADDED MIXIN FOR FRONT END DEVELOPER EXAM - RENERIO(EXAMINER)
+        }
+    }
+
+    &--nav {
+        background: $white;
+        @include flexbox();
+        @include justify-content(center);
+
+        &__item {
+            padding: $spacing-lg $spacing-xlg;
+            text-align: center;
+            @include align-items(center);
+
+            label {
+                font-size: $small;
+                color: $black;
+                letter-spacing: -0.39px;
+                margin-bottom: 0;
+                margin-top: $spacing-xs;
+            }
+
+            &.active {
+                .booking--form__icon {
+                    background: $primary-color;
+                }
+
+            }
+        }
+    }
+
+    &--content {
+        padding: $spacing-xlg;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+
+        label {
+            color: #d4d4d4;
+        }
+    }
+    &--btn {
+        .addBtn {
+            font-weight: bold;
+            margin-right: 50px;
+
+            .fas {
+                margin-right: 50px;
+            }
+        }
+    }
+}

@@ -11789,18 +11789,57 @@ a {
   padding: 1.875rem;
   -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 2rem;
 }
 
 .booking--content label {
   color: #d4d4d4;
 }
 
-.booking--btn .addBtn {
-  font-weight: bold;
-  margin-right: 50px;
+.booking--content .date {
+  width: 100% !important;
 }
 
-.booking--btn .addBtn .fas {
-  margin-right: 50px;
+.booking--addflight {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking--btn {
+  margin-top: 25px;
+  padding: 0 50px !important;
+}
+
+.booking--btn .addBtn {
+  font-weight: bold;
+}
+
+.booking--btn .addBtn .fa-plus {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.booking--next {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.booking--next h6 {
+  color: #fdbe13;
+}
+
+.booking--next h6 .fa-arrow-right {
+  margin-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

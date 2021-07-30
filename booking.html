@@ -76,14 +76,14 @@
                                </div>
                                <div class="booking--content tab-content" id="bookingContent">
                                    <div class="tab-pane show active" id="content-flight" role="tabpanel" aria-labelledby="content-flight">
-                                     <div class="container">
-                                         <div class="row form-container">
+                                     <div class="container booking--form-container">
+                                         <div class="row">
                                              <div class="col-md-6">
                                                  <div class="form-group">
                                                      <label>Date</label>
                                                      <div class="input-group date" data-provide="datepicker">
                                                         <input type="text" class="form-control">
-                                                        <div class="input-group-addon">
+                                                        <div class="input-group-prepend">
                                                             <span class="glyphicon glyphicon-th"></span>
                                                         </div>
                                                     </div>
@@ -131,9 +131,12 @@
                                          </div>
                                      </div>  
                                     </div>
-                                    <div class="booking--add">
-                                        <div class="booking--btn d-flex flex-row">
-                                            <button type="button" class="btn btn-primary addBtn center"><i class="fas fa-plus"></i>Add another flight</button>
+                                    <div class="booking--addflight d-flex justify-content-center">
+                                        <div class="booking--btn">
+                                            <button type="button" class="btn btn-primary addBtn"><i class="fas fa-plus"></i>Add another flight</button>
+                                        </div>
+                                        <div class="booking--next">
+                                            <h6>Next <i class="fas fa-arrow-right"></i></h6>
                                         </div>
                                     </div>
                                </div>
@@ -231,6 +234,7 @@
     <script type="text/javascript" src="assets/node_modules/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="assets/node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="assets/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/js/datePicker.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/addFlight.js"></script>
 </body>

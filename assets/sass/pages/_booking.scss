@@ -45,18 +45,45 @@
         padding: $spacing-xlg;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
+        max-height: 400px;
+        overflow-y: auto;
+        margin-bottom: 2rem;
 
         label {
             color: #d4d4d4;
         }
+        .date {
+            width: 100% !important;
+        }
+    }
+    &--addflight {
+        position: relative;
+        @include flex-align-center;
     }
     &--btn {
+        margin-top: 25px;
+        padding: 0 50px !important;
+
         .addBtn {
             font-weight: bold;
-            margin-right: 50px;
 
-            .fas {
-                margin-right: 50px;
+            .fa-plus {
+                margin-right: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    &--next {
+        position: absolute;
+        right: 25px;
+        bottom: 10px;
+        cursor: pointer;
+
+
+        h6 {
+            color: $primary-color;
+            .fa-arrow-right {
+                margin-left: 15px;
             }
         }
     }

@@ -1,18 +1,24 @@
 const addFlight = document.querySelector('.booking--btn');
 const formContainer = document.querySelector('.booking--form-container');
 
-let id = 0;
 
 class Form {
-    addForm = () => {
-        let newId = id + 1;
+    addForm = (newId) => {
+        var dateObj = new Date();
+        var month = dateObj.getUTCMonth() + 1; //months from 1-12
+        var day = dateObj.getUTCDate();
+        var year = dateObj.getUTCFullYear();
+
+        var newDate = year + "-" + month + "-" + day;
+        console.log(`${newDate}`);
+        console.log(`form ID: ${newId}`);
         formContainer.innerHTML += `
-            <div class="row" id=${newId+1}>
+            <div class="row" id=${newId}>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Date</label>
                         <div class="input-group date" data-provide="datepicker">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" value=${newDate}>
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-th"></span>
                         </div>
@@ -65,9 +71,14 @@ class Form {
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = new Form();
+    let id = formContainer.children.length + 1;
+    form.addForm(id);
+    console.log(id);
 
     addFlight.addEventListener('click', () => {
-        form.addForm();
+        let newId = formContainer.children.length + id;
+        form.addForm(newId);
+        console.log(newId);
     })
 })
 

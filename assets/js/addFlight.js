@@ -18,12 +18,11 @@ class Form {
                     <div class="form-group">
                         <label>Date</label>
                         <div class="input-group date" data-provide="datepicker">
-                        <input type="text" class="form-control" value=${newDate}>
-                        <div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
+                            <input type="text" class="form-control" id="my_hidden_input" value=${newDate}>
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
                         </div>
-                    </div>
-
                     </div>
                 </div>
                 <div class="col-md-6">

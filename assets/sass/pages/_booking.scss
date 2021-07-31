@@ -1,5 +1,21 @@
+/* =====  DATEPICKER CSS CUSTOMIZATION ==== */
+.datepicker {
+    min-width: 22%;
+}
+.datepicker-days {
+    padding: 0 1rem;
+}
+.datepicker table tr td.day {
+    padding: 10px;
+}
+.input-group-addon {
+    padding: 5px 10px;
+    background-color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 
-/* ---- BOOKING ---- */
+}
+/* ===== BOOKING ========================= */
 .booking {
     &--form {
         width: 100%;
@@ -56,6 +72,9 @@
         }
         .date {
             width: 100% !important;
+        }
+        .innput {
+            border-color: none;
         }
     }
     &--addflight {

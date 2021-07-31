@@ -1,6 +1,3 @@
-$('#datepicker').datepicker();
-$('#datepicker').on('changeDate', function() {
-    $('#my_hidden_input').val(
-        $('#datepicker').datepicker('getFormattedDate')
-    );
-});
+// $('.input-group').datepicker({
+//     format: "DD - MM dd, yyyy"
+// });

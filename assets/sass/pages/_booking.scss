@@ -23,7 +23,7 @@
     background-color: #fff;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-
+    border-left: 1px solid transparent;
 }
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
@@ -43,6 +43,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+// BOOTSTRAP SELECT CUSTOM CSS
+.selectpicker {
+    width: 100%;
+    height: 100%;
+    padding: 7.1px 5px;
+    border-radius: 5px;
+    border-color: none;
 }
 /* ===== BOOKING ========================= */
 .booking {
@@ -105,6 +113,11 @@
         .input {
             border-color: none;
         }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;       /* Remove default arrow */
+         }
     }
     &--addflight {
         position: relative;
@@ -114,6 +127,10 @@
         margin-top: 25px;
         padding: 0 50px !important;
 
+        .far {
+            border: 1px solid transparent;
+        }
+
         .addBtn {
             font-weight: bold;
 
@@ -122,6 +139,7 @@
                 font-size: 15px;
             }
         }
+        
     }
     &--next {
         position: absolute;

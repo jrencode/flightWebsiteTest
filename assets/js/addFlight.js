@@ -26,7 +26,7 @@ class Form {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Time</label>
-                        <select class="form-control" value=${selectedTime} placeholder=${selectedTime}>
+                        <select class="form-control selectpicker" data-live-search="true" value=${selectedTime} placeholder=${selectedTime}>
                             <option>11:00AM AST</option>
                             <option>12:00NN AST</option>
                             <option>1:00PM AST</option>
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     $('.date').datepicker({
         format: "DD - MM dd, yyyy",
     });
-    $(".date").datepicker('update', `${month}-${day}-${year}`);
+    $(".date").datepicker('setDate', `${month}-${day}-${year}`);
     $(".date").datepicker().on('changeDate', (e) => {
         console.log(e);
     })
@@ -99,12 +99,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let newId = formContainer.children.length + id;
 
-        form.addForm(newId, dateInput.value, selectedTime.value, durationInput.value, ageInput.value);
+        if(dateInput.value !== '' && selectedTime.value !== '' && durationInput.value !== '' && ageInput.value !== '') {
+            form.addForm(newId, dateInput.value, selectedTime.value, durationInput.value, ageInput.value);
+        } else {
+            console.log('button disabled');
+        }
+        
 
         // DATEPICKER FUNCTION
         $('.date').datepicker({
             format: "DD - MM dd, yyyy",
         });
+        $(".setDate").datepicker('setDate', `${month}-${day}-${year}`);
         
         console.log(dateInput.value);
         console.log(selectedTime.value);

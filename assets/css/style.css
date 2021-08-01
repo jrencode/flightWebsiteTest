@@ -11779,6 +11779,11 @@ a {
   border-color: none;
 }
 
+.bootstrap-select .dropdown-menu li a.opt {
+  position: relative;
+  padding-left: 5em;
+}
+
 /* ===== BOOKING ========================= */
 .booking--form {
   width: 100%;
@@ -11917,5 +11922,10 @@ a {
 
 .booking--next h6 .fa-arrow-right {
   margin-left: 15px;
+}
+
+.booking--error small {
+  color: red;
+  padding-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

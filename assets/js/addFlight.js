@@ -97,12 +97,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const ageInput = document.querySelector('.age-input');
         let selectedTime = document.querySelector('.selected-time');
 
+        const bookingError = document.querySelector('.booking--error');
+
         let newId = formContainer.children.length + id;
 
         if(dateInput.value !== '' && selectedTime.value !== '' && durationInput.value !== '' && ageInput.value !== '') {
             form.addForm(newId, dateInput.value, selectedTime.value, durationInput.value, ageInput.value);
         } else {
             console.log('button disabled');
+            bookingError.innerHTML = `
+                <small class="form-error">Please fill all the fields</small>
+            `
+            setTimeout(function() {
+                bookingError.innerHTML = '';
+            }, 2000)
+            
         }
         
 

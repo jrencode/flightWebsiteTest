@@ -52,6 +52,10 @@
     border-radius: 5px;
     border-color: none;
 }
+.bootstrap-select .dropdown-menu li a.opt {
+    position: relative;
+    padding-left: 5em;
+  }
 /* ===== BOOKING ========================= */
 .booking {
     &--form {
@@ -153,6 +157,12 @@
             .fa-arrow-right {
                 margin-left: 15px;
             }
+        }
+    }
+    &--error {
+        small {
+            color: red;
+            padding-left: 1rem;
         }
     }
 }

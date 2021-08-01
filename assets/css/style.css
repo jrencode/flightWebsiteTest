@@ -11745,6 +11745,22 @@ a {
   border-bottom-right-radius: 5px;
 }
 
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover {
+  background-color: #fdbe13;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffbb00), to(#fdbe13));
+  background-image: linear-gradient(to bottom, #ffbb00, #fdbe13);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#0044cc', GradientType=0);
+  border-color: #ffbb00 #ffbb00 #fdbe13;
+  border-color: rgba(255, 236, 132, 0.1) rgba(255, 217, 90, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
 /* ===== BOOKING ========================= */
 .booking--form {
   width: 100%;

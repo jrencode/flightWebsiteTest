@@ -1,3 +1,3 @@
-// $('.input-group').datepicker({
-//     format: "DD - MM dd, yyyy"
-// });
+$('.input-group').datepicker({
+    format: "DD - MM dd, yyyy"
+});

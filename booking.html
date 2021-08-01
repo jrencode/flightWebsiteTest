@@ -8,7 +8,6 @@
     <!-- FONTS -->
     <link rel="stylesheet" href="assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="assets/css/datepicker.css">
     <!-- PLUG INS -->
     <link rel="stylesheet" type="text/css" href="assets/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="assets/node_modules/swiper/swiper-bundle.min.css">
@@ -72,58 +71,54 @@
                                    <div class="tab-pane show active" id="content-flight" role="tabpanel" aria-labelledby="content-flight">
                                      <div class="container booking--form-container">
                                          <!-- LOADED IN JAVASCRIPT(addFlight.js) -->
-                                         <!-- <div class="row">
-                                             <div class="col-md-6">
-                                                 <div class="form-group">
-                                                     <label>Date</label>
-                                                     <div class="input-group date" data-provide="datepicker">
-                                                        <input type="text" class="form-control">
+                                         <div class="row" id=1>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Date</label>
+                                                    <div class="input-group date" data-provide="datepicker">
+                                                        <input type="text" class="form-control input date-input" id="my_hidden_input" required>
                                                         <div class="input-group-addon">
                                                             <i style="color: #fdbe13;" class="far fa-calendar-alt"></i>
                                                         </div>
                                                     </div>
-
-                                                 </div>
-                                             </div>
-                                             <div class="col-md-6">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Time</label>
-                                                    <select class="form-control">
-                                                        <option>11:00 AM AST</option>
-                                                        <option>12:00 NN AST</option>
-                                                        <option>1:00 PM AST</option>
-                                                        <option>2:00 PM AST</option>
-                                                        <option>3:00 PM AST</option>
-                                                        <option>4:00 PM AST</option>
+                                                    <select class="form-control selected-time">
+                                                        <option>11:00AM AST</option>
+                                                        <option>12:00NN AST</option>
+                                                        <option>1:00PM AST</option>
+                                                        <option>2:00PM AST</option>
+                                                        <option>3:00PM AST</option>
+                                                        <option>4:00PM AST</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Flight Duration</label>
-                                                    <div class="input-group date">
-                                                       <input type="text" class="form-control">
-                                                       <div class="input-group-addon">
-                                                           <span class="glyphicon glyphicon-th"></span>
-                                                       </div>
-                                                   </div>
-
+                                                    <div class="input-group date" data-provide="datepicker">
+                                                        <input type="text" class="form-control">
+                                                            <div class="input-group-addon">
+                                                                <i style="color: #fdbe13;" class="far fa-clock"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Age</label>
                                                     <div class="input-group date">
-                                                       <input type="text" class="form-control">
-                                                       <div class="input-group-addon">
-                                                           <span class="glyphicon glyphicon-th"></span>
-                                                       </div>
-                                                   </div>
-
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-th"></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                             
-                                         </div> -->
+                                        </div>
                                      </div>  
                                     </div>
                                     <div class="booking--addflight d-flex justify-content-center">

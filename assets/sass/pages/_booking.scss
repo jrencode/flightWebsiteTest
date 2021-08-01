@@ -2,6 +2,16 @@
 .datepicker {
     min-width: 22%;
 }
+.datepicker td,
+.datepicker th {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+}
 .datepicker-days {
     padding: 0 1rem;
 }
@@ -92,7 +102,7 @@
         .date {
             width: 100% !important;
         }
-        .innput {
+        .input {
             border-color: none;
         }
     }

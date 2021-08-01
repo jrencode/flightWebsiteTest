@@ -5,7 +5,7 @@ const formContainer = document.querySelector('.booking--form-container');
 
 
 class Form {
-    addForm = (newId, dateInput, selectedTime, ) => {
+    addForm = (newId, dateInput, selectedTime, duration, age ) => {
         const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
         ];
@@ -55,7 +55,7 @@ class Form {
                     <div class="form-group">
                         <label>Flight Duration</label>
                         <div class="input-group date" data-provide="datepicker">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value=${duration} placeholder=${duration}>
                                 <div class="input-group-addon">
                                     <i style="color: #fdbe13;" class="far fa-clock"></i>
                                 </div>
@@ -66,7 +66,7 @@ class Form {
                     <div class="form-group">
                         <label>Age</label>
                         <div class="input-group date">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value=${age} placeholder=${age}>
                             <div class="input-group-addon">
                                 <span class="glyphicon glyphicon-th"></span>
                             </div>
@@ -86,27 +86,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = new Form();
     let id = formContainer.children.length + 1;
 
-    $(".input-group").datepicker().on('changeDate', (e) => {
+    $(".date").datepicker().on('changeDate', (e) => {
         console.log(e);
     })
 
     addFlight.addEventListener('click', () => {
         const dateInput = document.querySelector('.date-input');
+        const durationInput = document.querySelector('.duration-input');
+        const ageInput = document.querySelector('.age-input');
+
         let selectedTime = document.querySelector('.selected-time');
 
         let newId = formContainer.children.length + id;
 
-        form.addForm(newId, dateInput.value, selectedTime.value);
-        $('.input-group').datepicker({
+        form.addForm(newId, dateInput.value, selectedTime.value, durationInput.value, ageInput.value);
+        $('.date').datepicker({
             format: "DD - MM dd, yyyy",
-            startDate: '-3d',
-
         });
         
         console.log(dateInput.value);
         console.log(selectedTime.value);
     })
-    console.log($(".input-group").datepicker());
+    console.log($(".date").datepicker());
     
 })
 

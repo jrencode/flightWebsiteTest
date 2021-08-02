@@ -114,14 +114,21 @@
         .date {
             width: 100% !important;
         }
-        .input {
-            border-color: none;
-        }
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;       /* Remove default arrow */
-         }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
     }
     &--addflight {
         position: relative;

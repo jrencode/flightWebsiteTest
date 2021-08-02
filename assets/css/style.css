@@ -11858,6 +11858,7 @@ a {
   max-height: 400px;
   overflow-y: auto;
   margin-bottom: 2rem;
+  /* Firefox */
 }
 
 .booking--content label {
@@ -11868,15 +11869,21 @@ a {
   width: 100% !important;
 }
 
-.booking--content .input {
-  border-color: none;
-}
-
 .booking--content select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   /* Remove default arrow */
+}
+
+.booking--content input::-webkit-outer-spin-button,
+.booking--content input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.booking--content input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .booking--addflight {

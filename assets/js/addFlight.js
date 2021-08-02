@@ -40,7 +40,7 @@ class Form {
                     <div class="form-group">
                         <label>Flight Duration</label>
                         <div class="input-group">
-                            <input type="text" class="form-control duration-input" value=${duration} placeholder=${duration}>
+                            <input type="number" class="form-control duration-input" value=${duration} placeholder=${duration}>
                             <span class="input-group-addon">
                                 <i style="color: #fdbe13;" class="far fa-clock"></i>
                             </span>
@@ -51,7 +51,7 @@ class Form {
                     <div class="form-group">
                         <label>Age</label>
                         <div class="input-group">
-                            <input type="text" class="form-control age-input" value=${age} placeholder=${age}>
+                            <input type="number" class="form-control age-input" value=${age} placeholder=${age}>
                         </div>
                     </div>
                 </div>

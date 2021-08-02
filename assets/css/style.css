@@ -11882,6 +11882,27 @@ a {
   margin: 0;
 }
 
+.booking--content .select-container {
+  position: relative;
+}
+
+.booking--content .select-container .input-group-addon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+}
+
+.booking--content .input-group-addon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  z-index: 5;
+}
+
 .booking--content input[type=number] {
   -moz-appearance: textfield;
 }

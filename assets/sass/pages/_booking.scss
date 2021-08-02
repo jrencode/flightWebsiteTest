@@ -124,6 +124,25 @@
             -webkit-appearance: none;
             margin: 0;
         }
+        .select-container {
+            position: relative;
+
+            .input-group-addon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: none;
+            }
+        }
+        .input-group-addon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: none;
+            border-top-right-radius: 5px !important;
+            border-bottom-right-radius: 5px !important;
+            z-index: 5;
+        }
 
 /* Firefox */
 input[type=number] {

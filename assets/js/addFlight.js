@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // DATEPICKER FUNCTIONS
     $('.date').datepicker({
         format: "DD - MM dd, yyyy",
+        autoclose: true,
     });
     $(".date").datepicker('setDate', `${month}-${day}-${year}`);
     $(".date").datepicker().on('changeDate', (e) => {
